@@ -48,7 +48,7 @@ export class AppComponent implements OnInit, DoCheck, OnDestroy {
 
   private startHttpRequest()
   {
-    this.http.get<Population>("https://localhost:5001/api/chart")
+    this.http.get<Population>("https://signalrpopulation.azurewebsites.net/api/chart")
       .subscribe((response) => {console.log(response)});
   }
 

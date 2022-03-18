@@ -1,0 +1,20 @@
+from mcr.microsoft.com/dotnet/sdk:latest as build
+
+workdir /app
+
+copy *.sln ./
+copy API/*.csproj API/
+copy Tests/*.csproj Tests/
+
+copy . ./
+
+run dotnet publish -c Release -o publish
+
+from mcr.microsoft.com/dotnet/aspnet:latest as runtime
+
+workdir /app
+copy --from=build /app/publish ./
+
+cmd ["dotnet", "Backend.dll"]
+
+expose 80

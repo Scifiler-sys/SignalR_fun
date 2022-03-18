@@ -23,14 +23,14 @@ export class SignalRService {
   constructor() 
   { 
     this.hubConnection = new signalR.HubConnectionBuilder()
-                        .withUrl("https://localhost:5001/chart", {skipNegotiation:true, transport: signalR.HttpTransportType.WebSockets})
+                        .withUrl("https://signalrpopulation.azurewebsites.net/chart", {skipNegotiation:true, transport: signalR.HttpTransportType.WebSockets})
                         .build();
   }
   
   public startConnection()
   {
     this.hubConnection = new signalR.HubConnectionBuilder()
-                        .withUrl("https://localhost:5001/chart", {skipNegotiation:true, transport: signalR.HttpTransportType.WebSockets})
+                        .withUrl("https://signalrpopulation.azurewebsites.net/chart", {skipNegotiation:true, transport: signalR.HttpTransportType.WebSockets})
                         .build();
 
     this.hubConnection.start()
