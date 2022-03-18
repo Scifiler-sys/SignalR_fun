@@ -61,7 +61,7 @@ export class SignalRService {
       {
         this.label = [];
       }
-      console.log(this.dataset[0].data[this.dataset[0].data.length - 1]);
+      console.log(apidata);
     });
   }
 
