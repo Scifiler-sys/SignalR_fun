@@ -1,5 +1,8 @@
 namespace Backend.Models
 {
+    /// <summary>
+    /// Deprecated
+    /// </summary>
     public class Chat
     {
         public List<int> Data { get; set; }

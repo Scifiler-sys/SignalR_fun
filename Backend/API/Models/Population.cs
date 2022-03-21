@@ -2,6 +2,9 @@ using Ganss.Excel;
 
 namespace Backend.Models
 {
+    /// <summary>
+    /// Actual model that gets mapped into via the excel sheet
+    /// </summary>
     public class Population
     {
         public int LocID { get; set; }

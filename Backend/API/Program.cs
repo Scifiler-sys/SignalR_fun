@@ -13,7 +13,7 @@ builder.Services.AddCors(options => {
         .AllowCredentials();
     });
 });
-builder.Services.AddSignalR();
+builder.Services.AddSignalR(); //Added for SignalR (Order matters make sure it is before .AddController())
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -38,10 +38,11 @@ app.UseCors("CORSPolicy");
 
 app.UseAuthorization();
 
+//Added to configure that we will have more endpoints (Essentially we added a SignalR endpoint)
 app.UseEndpoints(
     endpoints => {
         endpoints.MapControllers();
-        endpoints.MapHub<ChartHub>("/chart");
+        endpoints.MapHub<ChartHub>("/chart"); //This is the SignalR endpoint
     }
 );
 

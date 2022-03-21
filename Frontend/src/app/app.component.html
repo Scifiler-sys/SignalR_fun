@@ -1,6 +1,7 @@
 <h1>Real-Time Example in Angular using ASP.NET SignalR</h1>
 <p>Real-time connection will only last 60 seconds before closing in the server side (if closed, just refresh the page). Real-time will iterate through USA and India</p>
 <h4>Population per year in  {{signalR.title}}</h4>
+<!-- baseChart is a directive and it is used to select this canvas and do special methods stated in the documentation -->
 <div class="chart" *ngIf='show'>
     <canvas baseChart
             [datasets]="signalR.dataset"

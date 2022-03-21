@@ -22,6 +22,10 @@ public class ChartController : ControllerBase
         _repo = repo;
     }
 
+    /// <summary>
+    /// Sends information to all clients that is currently listening to "transferPopulationData"
+    /// Will only send data once and rejects any other requests for the data
+    /// </summary>
     public IActionResult Get()
     {
         if (!RealTimeManager.alreadySending)
