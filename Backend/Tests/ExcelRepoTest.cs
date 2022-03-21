@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using Backend.DL;
-using Backend.Models;
+using DL;
+using Models;
 using Xunit;
 
 namespace Tests;

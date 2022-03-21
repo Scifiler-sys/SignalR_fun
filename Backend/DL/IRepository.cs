@@ -1,4 +1,4 @@
-namespace Backend.DL
+namespace DL
 {
     public interface IRepository<T>
     {

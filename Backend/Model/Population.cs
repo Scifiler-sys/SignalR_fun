@@ -1,6 +1,6 @@
 using Ganss.Excel;
 
-namespace Backend.Models
+namespace Models
 {
     /// <summary>
     /// Actual model that gets mapped into via the excel sheet

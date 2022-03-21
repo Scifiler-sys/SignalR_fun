@@ -1,4 +1,4 @@
-namespace Backend.BL
+namespace BL
 {
     /// <summary>
     /// Simple class that will emulate a real-time environment by sending data every 2 seconds

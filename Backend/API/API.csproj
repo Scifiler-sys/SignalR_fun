@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExcelMapper" Version="5.2.375" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <Content Include="./DL/WPP2019_TotalPopulationBySex.xlsx" CopyToPublishDirectory="Always"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\DL\DL.csproj" />
+    <ProjectReference Include="..\BL\BL.csproj" />
   </ItemGroup>
 
 </Project>

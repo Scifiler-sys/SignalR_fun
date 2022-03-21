@@ -1,7 +1,5 @@
-using Backend.BL;
-using Backend.DL;
 using Backend.Hubs;
-using Backend.Models;
+using BL;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 

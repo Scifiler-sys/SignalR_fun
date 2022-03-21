@@ -22,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\API\Backend.csproj" />
+    <ProjectReference Include="..\DL\DL.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
 
 </Project>

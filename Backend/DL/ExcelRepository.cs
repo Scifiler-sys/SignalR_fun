@@ -1,7 +1,7 @@
-using Backend.Models;
 using Ganss.Excel;
+using Models;
 
-namespace Backend.DL
+namespace DL
 {
     /// <summary>
     /// Using Excel as our database and an ExcelMapper library is used to transfer data from excel into an object C# understands

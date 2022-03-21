@@ -1,6 +1,6 @@
-using Backend.DL;
+global using DL;
+global using Models;
 using Backend.Hubs;
-using Backend.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
