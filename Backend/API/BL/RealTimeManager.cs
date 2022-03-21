@@ -1,5 +1,8 @@
 namespace Backend.BL
 {
+    /// <summary>
+    /// Simple class that will emulate a real-time environment by sending data every 2 seconds
+    /// </summary>
     public class RealTimeManager
     {
         private Timer _timer;

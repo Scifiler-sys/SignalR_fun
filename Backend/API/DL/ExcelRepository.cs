@@ -3,6 +3,9 @@ using Ganss.Excel;
 
 namespace Backend.DL
 {
+    /// <summary>
+    /// Using Excel as our database and an ExcelMapper library is used to transfer data from excel into an object C# understands
+    /// </summary>
     public class ExcelRepository : IRepository<Population>
     {
         private readonly List<Population> _dataSource;
